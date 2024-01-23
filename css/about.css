@@ -1,0 +1,78 @@
+body {
+    background-color: black; /* Setting the background of the entire website to black */
+  }
+  
+  /* Custom CSS for Bootstrap Navbar */
+  .navbar {
+    background-color: #333; /* Dark background */
+  }
+  
+  .navbar .navbar-brand, .navbar-nav .nav-link {
+    color: #fff; /* White text */
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Slightly lighter white on hover */
+  }
+  
+  .navbar .navbar-nav .active > .nav-link, 
+  .navbar .navbar-nav .nav-item:focus > .nav-link {
+    color: #007bff; /* Bootstrap primary color for active/focus */
+  }
+  
+  /* Video and Image Gallery Section */
+.container {
+  color: #fff; /* White text for better readability */
+}
+
+.card {
+  background-color: #444; /* Dark background for cards */
+  border: none;
+}
+
+.card-title, .card-text {
+  color: #fff; /* White text inside cards */
+}
+
+/* Animations (Simple Fade-in Effect) */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.container {
+  animation: fadeIn 1.5s;.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+/* Existing CSS */
+
+/* If you want the container to have a larger maximum width */
+.container {
+  max-width: 1400px; /* Adjust this value as needed */
+}
+
+/* Reducing padding inside the column to make the cards larger */
+.col-md-4 {
+  padding: 0 5px; /* Reducing the padding; adjust as needed */
+}
+
+/* If you want to set a minimum width on the cards */
+.card {
+  min-width: 300px; /* Set a minimum width to make cards larger */
+}
+
+/* Ensuring the video fills the card */
+.card-img-top {
+  width: 100%; /* Ensures the video/image stretches to the full width of the card */
+  height: auto; /* Keeps the aspect ratio of the video/image */
+}
+

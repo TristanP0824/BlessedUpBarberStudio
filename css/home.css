@@ -1,0 +1,134 @@
+body {
+    background-color: black; /* Setting the background of the entire website to black */
+  }
+  
+  /* Custom CSS for Bootstrap Navbar */
+  .navbar {
+    background-color: #333; /* Dark background */
+  }
+  
+  .navbar .navbar-brand, .navbar-nav .nav-link {
+    color: #fff; /* White text */
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Slightly lighter white on hover */
+  }
+  
+  .navbar .navbar-nav .active > .nav-link, 
+  .navbar .navbar-nav .nav-item:focus > .nav-link {
+    color: #007bff; /* Bootstrap primary color for active/focus */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Styles for the Introduction Section */
+.intro-section {
+  color: #fff; /* White text for readability on black background */
+  padding: 40px 0; /* Spacing around the section */
+}
+
+.intro-section h1 {
+  color: #fff; /* White text for the main heading */
+  font-size: 2.5em; /* Slightly larger font for the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.intro-section p {
+  font-size: 1.2em; /* Comfortable reading size for the paragraph */
+  line-height: 1.6; /* Spacing between lines for readability */
+  margin-bottom: 20px; /* Spacing below the paragraph */
+}
+
+/* Responsive Styles for Images */
+.intro-section img {
+  max-width: 100%; /* Ensures image is responsive and fits its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Animation for text and image */
+.intro-section h1, .intro-section p, .intro-section img {
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as per your preference */
+  animation-fill-mode: both; /* Keeps the element in the final state of the animation */
+}
+
+/* You might want to delay the animation for either the text or image for better effect */
+.intro-section h1, .intro-section p {
+  animation-delay: 0.5s; /* Delays the start of the animation */
+}
+
+@media (max-width: 767px) {
+  .intro-section-two .row {
+      flex-direction: column-reverse; /* Reverses the order of flex items */
+  }
+
+  .intro-section-two h1, .intro-section-two p {
+      text-align: center; /* Center-aligns the text on mobile devices */
+  }
+}
+
+/* Styles for the Who are We? Section */
+.intro-section-two {
+  color: #fff; /* White text for readability on black background */
+  padding: 40px 0; /* Spacing around the section */
+}
+
+.intro-section-two h1 {
+  color: #fff; /* White text for the main heading */
+  font-size: 2.5em; /* Slightly larger font for the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.intro-section-two p {
+  font-size: 1.2em; /* Comfortable reading size for the paragraph */
+  line-height: 1.6; /* Spacing between lines for readability */
+  margin-bottom: 20px; /* Spacing below the paragraph */
+}
+
+/* Responsive Styles for Images */
+.intro-section-two img {
+  max-width: 100%; /* Ensures image is responsive and fits its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Animation for text and image */
+.intro-section-two h1, .intro-section-two p, .intro-section-two img {
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as per your preference */
+  animation-fill-mode: both; /* Keeps the element in the final state of the animation */
+  animation-delay: 2.0s; /* Delays the start of the animation */
+}
+
+
+/* Styles for the Third Section */
+.intro-section-three {
+  color: #fff; /* White text for readability */
+  padding: 40px 0; /* Spacing around the section */ 
+}
+
+/* Styling for the Slideshow */
+.carousel-inner img {
+  border-radius: 8px; /* Optional: Adds rounded corners to the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+  width: 100%; /* Ensures each image stretches to cover the carousel width */
+  height: 400px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+/* Styling for the Text Column */
+.intro-section-three h1 {
+  font-size: 2.5em; /* Size of the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: white; /* Optional: Color of the heading */
+}
+
+.intro-section-three p {
+  font-size: 1.2em; /* Size of the paragraph text */
+  line-height: 1.6; /* Line height for better readability */
+}

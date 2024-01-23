@@ -1,0 +1,141 @@
+body {
+    background-color: black; /* Setting the background of the entire website to black */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Custom CSS for Bootstrap Navbar */
+  .navbar {
+    background-color: #333; /* Dark background */
+  }
+  
+  .navbar .navbar-brand, .navbar-nav .nav-link {
+    color: #fff; /* White text */
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Slightly lighter white on hover */
+  }
+  
+  .navbar .navbar-nav .active > .nav-link, 
+  .navbar .navbar-nav .nav-item:focus > .nav-link {
+    color: #007bff; /* Bootstrap primary color for active/focus */
+  }
+  
+  /*CSS for the contents of the contact page*/
+  .container {
+    padding-left: 15px; /* Adjust as needed for alignment */  
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: white;
+    margin-bottom: 1rem;
+    
+}
+
+.form-group label {
+    font-weight: bold;
+    color:white;
+}
+
+.btn-primary {
+    background-color: #1a1a1a; /* Adjust the color to fit your brand */
+    border: none;
+}
+
+.map-container {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+p{
+  color:white;
+}
+h2, .form-group label, .btn-primary, .map-container, p {
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as per your preference */
+  animation-fill-mode: both; /* Keeps the element in the final state of the animation */
+}
+
+/*Social Media Icons*/
+.social-media-container {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  text-align: center; /* Center the icons horizontally */
+  padding-left: 20px; /* Adjust as needed for alignment */
+}
+
+.social-media-container a {
+  margin: 0 10px; /* Spacing between icons */
+  color: #ffffff; /* Light color for visibility against black */
+  font-size: 24px; /* Icon size */
+  transition: color 0.3s ease; /* Smooth color transition for hover */
+}
+
+.social-media-container a:hover {
+  color: #d1d1d1; /* Slightly lighter shade for hover effect */
+  text-decoration: none; /* No underline on hover */
+}
+
+@media (max-width: 767px) {
+  /* Hide the Contact Us section */
+  .container .row .col-md-6:first-child {
+    display: none;
+  }
+  
+  /* If you have added order changes previously, you can remove them since this section will be hidden */
+}
+
+/* This applies to screens larger than 767px, which typically include tablets and desktops */
+@media (min-width: 768px) {
+  /* Show the Contact Us section */
+  .container .row .col-md-6:first-child {
+    display: block; /* or 'flex' if it's a flex container */
+  }
+}
+
+/* Override Bootstrap container max-width on larger screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: none; /* This will allow the container to take the full width of the viewport */
+  }
+
+  .row > [class*='col-'] {
+    padding-right: 0; /* Remove default Bootstrap padding */
+    padding-left: 0; /* Remove default Bootstrap padding */
+  }
+
+  .form-group, .map-container {
+    padding-right: 15px; /* Apply padding to the inside of the columns if needed */
+    padding-left: 15px; /* Apply padding to the inside of the columns if needed */
+  }
+
+  /* Make the Google map iframe responsive */
+  .map-container iframe {
+    width: 100% !important; /* Override any inline styles */
+    height: auto !important; /* Make the height responsive */
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  }
+}
+
+/* Ensure that social media icons container takes the full width */
+.social-media-container {
+  width: 100%;
+  padding: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the time as per your preference */
+  animation-fill-mode: both; /* Keeps the element in the final state of the animation */
+}
+
